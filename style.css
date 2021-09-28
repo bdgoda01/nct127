@@ -1,0 +1,121 @@
+/* --emerald: #44cb64ff;
+--light-slate-gray: #7a8b99ff;
+--pewter-blue: #91adc2ff;
+--cool-grey: #9ba0bcff;
+--lavender-gray: #c1b8c8ff; */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+header > img {
+    width: 100vw;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 1rem;
+    width: 75vw;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.member-card{
+    width: 75vw;
+    height: auto;
+    padding: 1rem 0.5rem 0.4rem 0.5rem;
+    margin: 3rem 0;
+    background-color: #f9f4fd;
+    /* border: 3px solid #f1e0ff; */
+    border-radius: 4%;
+    box-shadow: 
+        .5rem .5rem .3rem #c1b8c8ff, 
+        inset 0 0 .5rem .5rem #f1e0ff;
+}
+
+.member-card img{
+    width: 70vw;
+    height: auto;
+    border-radius: 4%;
+}
+
+
+
+/* media query 425px to 768px */
+@media only screen and (min-width: 425px){
+    main{
+        width: 85vw;
+    }
+    
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 85vw;
+    }
+    .member-card{
+        width: 34vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem .5rem;
+    }
+    .member-card img{
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .member-card{
+        width: 22vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem .5rem;
+    }
+    .member-card img{
+        width: 20vw;
+    }
+}
+
+
+
+/* media query 768px and up */
+@media only screen and (min-width: 768px){
+    .member-card{
+        width: 14vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem .5rem;
+    }
+    .member-card img{
+        width: 13vw;
+    }
+    .member-card:nth-child(1), .member-card:nth-child(2), .member-card:nth-child(3), .member-card:nth-child(4), .member-card:nth-child(5){
+        margin: 1rem .3rem;
+    }
+}
