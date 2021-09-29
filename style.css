@@ -27,6 +27,7 @@ body{
 
 nav{
     position: fixed;
+    z-index: 100;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -94,6 +95,86 @@ h1{
     border-radius: 4%;
 }
 
+#albums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* text-align: center; */
+}
+
+.album-card{
+    width: 75vw;
+    height: auto;
+    padding: 1rem 0.5rem 0.4rem 0.5rem;
+    margin: 3rem 0;
+    background-color: #f1e0ff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 
+        .5rem .5rem .3rem #c1b8c8ff, 
+        inset 0 0 .5rem .5rem rgb(240, 222, 255);
+    border-radius: 4%;
+}
+
+.play{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 4%;
+}
+
+.play img{
+    width: 70vw;
+    height: auto;
+    border-radius: 4%;
+    align-self: center;
+}
+
+.play-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 4%;
+}
+
+.play:hover .play-overlay{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.play-overlay svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.album-info{
+    margin: 0;
+    padding: 0.5rem 0.5rem .6rem 0.5rem;
+    /* padding: 10px 5px 10px 8px; */
+}
+
+.album-card h4{
+    margin: 0 ;
+    padding-bottom: 5px;
+}
+
+.album-card h5{
+    margin: 0;
+    /* padding: 0 5px 10px 5px; */
+    color: rgb(85, 85, 85);
+    font-weight: normal;
+}
 
 
 /* media query 425px to 600px */
@@ -102,20 +183,20 @@ h1{
         width: 85vw;
     }
     
-    #cards{
+    .cards{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 85vw;
     }
-    .member-card{
+    .member-card, .album-card{
         width: 34vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 1rem .5rem;
     }
-    .member-card img{
+    .member-card img, .play img, .play{
         width: 30vw;
     }
 }
@@ -132,14 +213,14 @@ h1{
         width: 6rem;
     }
     
-    .member-card{
+    .member-card, .album-card{
         width: 22vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 1rem .5rem;
     }
-    .member-card img{
+    .member-card img, .play img, .play{
         width: 20vw;
     }
 }
@@ -167,13 +248,23 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1rem .5rem;
+        margin: 1rem .3rem;
     }
     .member-card img{
         width: 13vw;
     }
     .member-card:nth-child(1), .member-card:nth-child(2), .member-card:nth-child(3), .member-card:nth-child(4), .member-card:nth-child(5){
-        margin: 1rem .3rem;
+        margin: 1rem .2rem;
+    }
+    .album-card{
+        width: 17vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem .4rem;
+    }
+    .play img, .play{
+        width: 15vw;
     }
 }
 
