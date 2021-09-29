@@ -2,7 +2,8 @@
 --light-slate-gray: #7a8b99ff;
 --pewter-blue: #91adc2ff;
 --cool-grey: #9ba0bcff;
---lavender-gray: #c1b8c8ff; */
+--lavender-gray: #c1b8c8ff;
+--purple-white: #f9f4fd */
 
 @font-face {
     font-family: "Montserrat";
@@ -24,7 +25,38 @@ body{
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    width: 100vw;
+    background-color: #9ba0bcff;
+    font-size: 15px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #f9f4fd;
+    height: 100%;
+}
+
+nav a:hover{
+    text-shadow: 0 0 3px #44cb64ff;
+    font-size: 18px;
+}
+
+header{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 header > img {
+    padding-top: 3vh;
     width: 100vw;
     height: auto;
 }
@@ -64,7 +96,7 @@ h1{
 
 
 
-/* media query 425px to 768px */
+/* media query 425px to 600px */
 @media only screen and (min-width: 425px){
     main{
         width: 85vw;
@@ -88,7 +120,18 @@ h1{
     }
 }
 
+
+/* media query 600px to 768px */
 @media only screen and (min-width: 600px){
+    nav{
+        justify-content: flex-start;
+    }
+
+    nav a{
+        text-align: center;
+        width: 6rem;
+    }
+    
     .member-card{
         width: 22vw;
         display: flex;
@@ -103,8 +146,22 @@ h1{
 
 
 
-/* media query 768px and up */
+/* media query 768px to 1024px */
 @media only screen and (min-width: 768px){
+    nav{
+        height: 12vh;
+    }
+
+    nav a{
+        font-size: 20px;
+        width: 8rem;
+    }
+
+    nav a:hover{
+        font-size: 24px;
+        text-shadow: 0 0 3px #44cb64ff;
+    }
+    
     .member-card{
         width: 14vw;
         display: flex;
@@ -117,5 +174,13 @@ h1{
     }
     .member-card:nth-child(1), .member-card:nth-child(2), .member-card:nth-child(3), .member-card:nth-child(4), .member-card:nth-child(5){
         margin: 1rem .3rem;
+    }
+}
+
+
+/* media query 1024px and up */ 
+@media only screen and (min-width: 1024px){
+    body{
+        font-size: 18px;
     }
 }
