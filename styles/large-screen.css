@@ -1,0 +1,23 @@
+body{
+    font-size: 18px;
+}
+
+#group h1, #group p, .cards{
+    max-width: 880px;
+}
+
+.member-card{
+    max-width: 145px;
+}
+
+.member-card img{
+    max-width: 135px;
+}
+
+.album-card{
+    max-width: 176px;
+}
+
+.play, .play img, .album-info{
+    max-width: 156px;
+}

@@ -1,0 +1,43 @@
+nav{
+    height: 12vh;
+}
+
+nav a{
+    font-size: 20px;
+    width: 8rem;
+}
+
+nav a:hover{
+    font-size: 24px;
+    text-shadow: 0 0 3px #44cb64ff;
+}
+
+.member-card{
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem .3rem;
+}
+.member-card img{
+    width: 13vw;
+}
+.member-card:nth-child(1), .member-card:nth-child(2), .member-card:nth-child(3), .member-card:nth-child(4), .member-card:nth-child(5){
+    margin: 1rem .2rem;
+}
+.album-card{
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem .4rem;
+}
+
+.play img, .play, .album-info {
+    width: 15vw;
+    align-self: center;
+}
+
+.empty{
+    height: 5vh;
+}
