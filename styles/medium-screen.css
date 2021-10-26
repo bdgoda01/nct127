@@ -41,3 +41,30 @@ nav a:hover{
 .empty{
     height: 5vh;
 }
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: max-content;
+    align-self: center;
+    align-items: center;
+}
+
+#address p{
+    font-size: 15px;
+}
+
+#contact img{
+    display: block;
+    width: 50%;
+}
+
+footer{
+    height: 10vh;
+}

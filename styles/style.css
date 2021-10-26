@@ -192,6 +192,29 @@ h1{
     font-weight: normal;
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:flex-start;
+    text-align: center;
+    margin: 0 1rem;
+    width: 75vw;
+}
+
+#contact h2{
+    align-self: center;
+}
+
+#contact img{
+    display: none;
+}
+
+footer{
+    height: 6vh;
+    width: 100vw;
+    background-color: #9ba0bcff;
+}
 
 /* media query 425px to 600px */
 /* @media only screen and (min-width: 425px){
