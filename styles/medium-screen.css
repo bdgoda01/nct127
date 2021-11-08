@@ -68,3 +68,7 @@ nav a:hover{
 footer{
     height: 10vh;
 }
+
+footer img{
+    height: 60%;
+}

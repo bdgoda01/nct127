@@ -214,8 +214,14 @@ footer{
     height: 6vh;
     width: 100vw;
     background-color: #9ba0bcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer img{
+    height: 80%
+}
 /* media query 425px to 600px */
 /* @media only screen and (min-width: 425px){
     main{
