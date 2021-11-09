@@ -7,17 +7,5 @@ imgCard.forEach(item => {
         } else {
             item.classList.add("img-card-transform")
         }
-
-        // item.style.transform = "rotateY(180deg)";
-        // item.classList.add("img-card-transform")
     })
 });
-
-
-// imgCard.onclick = function(){
-//     imgCard.classList.add("img-card-transform");
-// }
-
-// for(var i = 0; i < imgCard.length; i++){
-//     imgCard[i].classList.add("img-card-transform");
-// }

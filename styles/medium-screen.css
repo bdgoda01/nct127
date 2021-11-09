@@ -22,7 +22,7 @@ nav a:hover{
 .member-card img{
     width: 13vw;
 }
-.member-card:nth-child(1), .member-card:nth-child(2), .member-card:nth-child(3), .member-card:nth-child(4), .member-card:nth-child(5){
+.member-card:nth-child(-n+5){
     margin: 1rem .2rem;
 }
 .album-card{
